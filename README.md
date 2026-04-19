@@ -18,10 +18,10 @@ class Pacman extends GameEntity {
 
     void move(char dir, GameBoard board) {
         int newX = x, newY = y;
-        if (dir == 'o') newX--;   //W for UP
-        if (dir == 'k') newX++;   //S for DOWN
-        if (dir == 'j') newY--;   //A for LEFT
-        if (dir == 'l') newY++;   //D for RIGHT
+        if (dir == 'o') newX--;   //o for UP
+        if (dir == 'k') newX++;   //k for DOWN
+        if (dir == 'j') newY--;   //j for LEFT
+        if (dir == 'l') newY++;   //l for RIGHT
 
         // IF WALL (#) NOT PRESENT THEN MOVE
         if (board.grid[newX][newY] != '#') {
